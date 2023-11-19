@@ -2,7 +2,12 @@ on:
   push:
     branches:
       - main
+
 name: docs
+
+permissions:
+  pull-requests: write
+  contents: write
 
 jobs:
   docs:
@@ -22,3 +27,5 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           base: "main"
+          commit-message: "chore(doc): automatic vimdoc update"
+          title: Auto vimdoc update
