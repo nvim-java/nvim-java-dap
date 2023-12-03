@@ -8,4 +8,4 @@
 
 This project includes anything and everything to do with debugging Java applications
 
-## Head on to the main project [:coffee: nvim-java](https://github.com/nvim-java/nvim-java)``
+## Head on to the main project [:coffee: nvim-java](https://github.com/nvim-java/nvim-java)
