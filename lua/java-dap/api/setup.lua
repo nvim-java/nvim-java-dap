@@ -54,6 +54,10 @@ function Setup:enrich_config(config)
 	assert(main, 'To enrich the config, mainClass should already be present')
 	assert(project, 'To enrich the config, projectName should already be present')
 
+	if config.request == 'launch' then
+		self.java_debug:build_workspace(main, project, nil, false)
+	end
+
 	if not config.classPaths or config.modulePaths then
 		local paths = self.java_debug:resolve_classpath(main, project)
 
