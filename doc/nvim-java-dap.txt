@@ -1,10 +1,11 @@
-*nvim-java-dap.txt*      For Neovim >= 0.9.4     Last change: 2023 December 10
+*nvim-java-dap.txt*        For Neovim >= 0.9.4       Last change: 2024 July 25
 
 ==============================================================================
 Table of Contents                            *nvim-java-dap-table-of-contents*
 
 1. nvim-java-dap                                 |nvim-java-dap-nvim-java-dap|
   - Head on to the main project nvim-java|nvim-java-dap-head-on-to-the-main-project-nvim-java|
+2. Links                                                 |nvim-java-dap-links|
 
 ==============================================================================
 1. nvim-java-dap                                 *nvim-java-dap-nvim-java-dap*
