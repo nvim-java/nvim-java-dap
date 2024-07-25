@@ -17,8 +17,8 @@ function Runner:new()
 end
 
 ---Dap run with given config
----@param config java-core.DapLauncherConfig
----@param report java_test.JUnitTestReport
+---@param config java-dap.DapLauncherConfig
+---@param report java-test.JUnitTestReport
 function Runner:run_by_config(config, report)
 	log.debug('running dap with config: ', config)
 
@@ -35,9 +35,9 @@ end
 
 ---Runs before the dap run
 ---@private
----@param conf java-core.DapLauncherConfig
----@param report java_test.JUnitTestReport
----@return java-core.DapLauncherConfig
+---@param conf java-dap.DapLauncherConfig
+---@param report java-test.JUnitTestReport
+---@return java-dap.DapLauncherConfig
 function Runner:before(conf, report)
 	log.debug('running "before" callback')
 

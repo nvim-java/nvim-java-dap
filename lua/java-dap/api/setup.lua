@@ -1,8 +1,6 @@
 local adapters = require('java-dap.data.adapters')
-
 local log = require('java-core.utils.log')
 local class = require('java-core.utils.class')
-
 local JavaDebug = require('java-core.ls.clients.java-debug-client')
 
 ---@class java-dap.Setup
@@ -13,7 +11,6 @@ local Setup = class()
 ---@param client any
 function Setup:_init(client)
 	self.client = client
-
 	self.java_debug = JavaDebug(client)
 end
 
@@ -42,7 +39,6 @@ end
 
 ---Returns the launch config filled with required data if missing in the passed
 --config
----@private
 ---@param config java-dap.DapLauncherConfigOverridable
 ---@return java-dap.DapLauncherConfigOverridable
 function Setup:enrich_config(config)
